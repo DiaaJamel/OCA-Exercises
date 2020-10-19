@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-auto-columns: 1fr 1fr 1fr;
+            grid-gap: 0.5rem;
+            width: 50%;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 0.5rem;
+            width: 50%;
+        }
+
+        .item,        .items {
+            height: 10rem;
+            margin: 0.5rem;
+            padding: 1rem;
+
+        }
+
+        .item:first-child {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 2.5rem;
+        }
+
+        .item:nth-child(2) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .item:nth-child(4) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .item:nth-child(7) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .item:nth-child(8) {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .items:nth-child(5) {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            height: 2.5rem;
+        }
+
+        .gray {
+            background-color: gray;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .lightskyblue {
+            background-color:lightskyblue;
+        }
+
+        .yellow {
+            background-color:yellow;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item gray"></div>
+        <div class="item blue"></div>
+        <div class="item lightskyblue"></div>
+        <div class="item yellow"></div>
+        <div class="item yellow"></div>
+        <div class="item yellow"></div>
+        <div class="item lightskyblue"></div>
+        <div class="item blue"></div>
+    </div>
+
+    <div class="container2">
+        <div class="items orange"></div>
+        <div class="items orange"></div>
+        <div class="items orange"></div>
+        <div class="items orange"></div>
+        <div class="items gray"></div>
+    </div>
+</body>
+
+</html>

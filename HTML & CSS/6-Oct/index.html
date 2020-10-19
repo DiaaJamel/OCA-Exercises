@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .grid {
+    display: grid;
+    /* grid-template-columns: 200px 200px;*/
+    /* grid-template-columns: repeat(3, 200px);*/
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 0.25rem;
+  }
+  .item {
+    background: chartreuse;
+    /* margin: 0.1rem;*/
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 0.5rem;
+  }
+  .content {
+    background: #33aa;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  .sidebar {
+    background: coral;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+  }
+  footer {
+    background: pink;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="live code 2.css">
+</head>
+<body>
+  <main>
+    <div class="grid">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <section class="content">
+      <h3>This is main Section</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, molestiae, consequuntur quisquam corporis,
+        animi vel eveniet deleniti nam cumque necessitatibus voluptatem saepe quae! Unde maiores laborum, temporibus
+        excepturi impedit nisi.
+      </p>
+    </section>
+    <aside class="sidebar">
+      <h3>This is Sidebar</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, molestiae, consequuntur quisquam corporis,
+        animi vel eveniet deleniti nam cumque necessitatibus voluptatem saepe quae! Unde maiores laborum, temporibus
+        excepturi impedit nisi.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore voluptatem voluptas, optio nam
+        alias! Inventore optio, amet unde consequatur consectetur mollitia corrupti cum, ratione nobis ex iure ab atque
+        accusantium, officiis quae nihil nisi. Maxime commodi, laborum tempora ipsa ullam, perspiciatis architecto,
+        libero aperiam soluta culpa assumenda laudantium omnis incidunt minima vero pariatur praesentium! Sit eaque
+        commodi alias natus labore laboriosam architecto quidem rerum, aliquam fugiat neque necessitatibus. Maxime, rem
+        enim? Magnam enim officiis distinctio voluptates animi fugiat at quasi repellat nemo ducimus, omnis accusamus
+        numquam nostrum in esse harum itaque ut molestiae earum mollitia consequatur! Dolore, asperiores dolor.</p>
+    </aside>
+  </main>
+  <footer>
+    <section class="footercontent">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur perspiciatis doloribus consectetur animi
+        provident ab impedit facilis voluptates, quas enim veniam dolorem consequuntur ex error laboriosam corporis eius
+        adipisci illum.</p>
+    </section>
+  </footer>
+</body>
+</html>

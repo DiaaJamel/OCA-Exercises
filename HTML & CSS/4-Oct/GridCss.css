@@ -1,0 +1,29 @@
+.contanier {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 10vh;
+	grid-gap: 1em;
+	
+}
+
+.black {
+	background-color: black;
+	grid-column: 1/4;
+
+}
+
+.orange {
+	background-color: orange;
+	grid-column: 1/3;
+	grid-row: 2/5;
+}
+
+.green {
+	background-color: green;
+	grid-row: 2/5;
+}
+
+.blue {
+	background-color: blue;
+	grid-column: 1/4;
+}

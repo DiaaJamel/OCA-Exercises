@@ -1,0 +1,95 @@
+body {
+    background-color: gold;
+    width: 100%;
+    height: 100%;
+    margin: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: 'sidebar'
+    'content'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 305px 800px 200px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: white;
+    height: 10rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.content {
+    grid-area: content;
+    background-color: lightskyblue;
+    opacity: 0.8;
+}
+.footer {
+    grid-area: footer;
+    background-color: white;
+}
+
+.sidebar, .content, .footer{
+    padding: 2rem;
+}
+
+.content img {
+    justify-content: center;
+}
+nav img {
+    width: 30%;
+    height:10%;
+    padding-top: 0.2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0%;
+    justify-content: space-between;
+}
+nav ul li {
+    list-style: none;
+    font-size: 2rem;
+}
+nav ul li a {
+    text-decoration: none;
+}
+
+.here {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content-here {
+    font-size: 2rem;
+    color: black               ;
+}
+
+.footer {
+    text-align: center;
+    justify-content: space-between;
+}
+ul li {
+    display: block;
+    list-style: none;
+    font-size: 2rem;
+    justify-content: space-between;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    justify-content: space-around;
+
+}

@@ -1,0 +1,24 @@
+.container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.orange {
+	flex:1;
+	background-color: orange;
+	color: white;
+	text-align: center;
+	line-height: 100vh;
+}
+
+.blue {
+	flex:1;
+	background-color: blue;
+	color: white;
+	text-align: center;
+	line-height: 100vh;
+}
+
+
