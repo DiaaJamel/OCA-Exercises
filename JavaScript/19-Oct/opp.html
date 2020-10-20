@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Task</title>
+</head>
+<body>
+    <script>
+        class person {
+            constructor (Name, Age) {
+                this.Name = Name ;
+                this.Age= Age;
+            }
+            getName = () => this.Name;
+            AlertName = () => "Hello"+ this.Name;
+            AlertFull = () => console.log("Hello" + this.Name + "your age"+ this.Age);
+        }
+
+        class Car {
+            constructor (Model,Speed) {
+                this.Model = Model;
+                this.Speed = Speed;
+            }
+            getModel = () => this.Model;
+            consolog = () => console.log("Your car model" + this.Model + "and it has" + this.speed +"speed") ;
+        }
+
+        let PersonName = new person(Diaa,23);
+        console.log = (PersonName);
+
+        let CarModel = new Car(Audi,200);
+        console.log = (CarModel);
+
+    </script>
+</body>
+</html>
