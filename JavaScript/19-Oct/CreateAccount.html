@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Create an Account</h3> <hr style="background-color: black;">
+
+        <form action="">
+            <i class="fas fa-phone-alt"></i>
+                <input class="input" type="text" id="name" name="name" 
+                placeholder="Name" required class="input_item empty" pattern="(^[A-Z][a-z]*(-|\s)[A-Z][a-z]*$)"> <br>
+
+                <input class="input" type="text" id="phone" name="phone" 
+                placeholder=Phone Number" required class="input_item empty" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{3}"> <br>
+
+                <input class="input" type="text" id="email" name="email"  
+                placeholder=Email" required class="input_item empty" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> <br>
+
+                <input class="input" type="text" id="password" name="password" placeholder=" Password" required class="input_item empty" 
+                pattern="(^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#\$%\^&\*]))" style="-webkit-text-security: disc"> <br>
+
+                <input class="input" type="checkbox" id="accept" name="agree" value="agree" onclick="activate()"> <br>
+                
+                <label style="color: white;"> I agree to the <a style="color: green;">Terms and Conditions</a> and <a style="color: green;">Privacy Policy</a> </label><br>
+            <div class="button">
+                <button id="button" class="btn1" disabled> Create Account </button>
+            </div>
+        </form>
+
+        <script>
+            function activate() {
+            if (document.getElementById('accept').checked ==1) {
+                document.getElementById("button").disabled = false;
+            }
+            else{
+                document.getElementById("button").disabled = true;
+    
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>
