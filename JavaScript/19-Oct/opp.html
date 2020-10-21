@@ -14,8 +14,17 @@
             }
             getName = () => this.Name;
             AlertName = () => "Hello"+ this.Name;
-            AlertFull = () => console.log("Hello" + this.Name + "your age"+ this.Age);
+            AlertFull = () => console.log("Hello " + this.Name + " your age is "+ this.Age);
         }
+        class child extends person {
+            constructor (Name, Age) {
+                super (Name, Age);
+                this.Name = Name;
+                this.Age = Age;
+            }
+            AlertChild = () => console.log("Hello " + this.Name + " your child age is "+ this.Age);
+        }
+
 
         class Car {
             constructor (Model,Speed) {
@@ -23,14 +32,20 @@
                 this.Speed = Speed;
             }
             getModel = () => this.Model;
-            consolog = () => console.log("Your car model" + this.Model + "and it has" + this.speed +"speed") ;
+            AlertCar = () => console.log("Your car model" + this.Model + "and it has" + this.speed +"speed") ;
         }
 
-        let PersonName = new person(Diaa,23);
+        let PersonName = new person("Diaa",23);
+        PersonName.AlertFull ();
         console.log = (PersonName);
 
-        let CarModel = new Car(Audi,200);
-        console.log = (CarModel);
+        let childNew = new child ("Ahmad", 5);
+        childNew.AlertChild ();
+        console.log = (ChildNew);
+
+        let CarNew = new Car("Audi",200);
+        CarNew.alertCar();
+        console.log(CarNew);
 
     </script>
 </body>
